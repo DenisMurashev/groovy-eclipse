@@ -128,7 +128,7 @@ $Date: 2010-05-29 06:47:51 +0200 (Sat, 29 May 2010) $
 			<artifact:mvn>
 				<arg value="org.apache.maven.plugins:maven-gpg-plugin:1.4:sign-and-deploy-file" />
 				<arg value="-Durl=${deploy.repo.url}" />
-				<arg value="-Dgpg.passphrase=" />
+				<arg value="-Dgpg.passphrase=GoPivotal!" />
 				<arg value="-DrepositoryId=${deploy.repo.id}" />
 				<arg value="-DpomFile=${jar.dest}/@{prefix}.pom" />
 				<arg value="-Dfile=${jar.dest}/@{prefix}-@{version}.jar" />

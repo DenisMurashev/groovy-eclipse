@@ -10,8 +10,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- <groovy.xx.version>2.3.4-01-SNAPSHOT</groovy.xx.version> -->
-		<groovy.xx.version>2.3.4-01</groovy.xx.version>
-		<groovy.all.version>2.3.4</groovy.all.version> <!-- groovy all jar version to use for tests -->
+		<groovy.xx.version>2.3.7-01</groovy.xx.version>
+		<groovy.all.version>2.3.7</groovy.all.version> <!-- groovy all jar version to use for tests -->
 		<!-- only one of the below is actually used at any time and needs to be 
 			replaced to run tests with different compiler. So we it it changed to use 
 			just one property groovy.xx.version to represent all of them <groovy.22.version>2.2.0-01-SNAPSHOT</groovy.22.version> 
@@ -62,11 +62,11 @@
 	</organization>
 
 	<dependencies>
-<!-- 		<dependency>
+ 		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
 			<artifactId>groovy-eclipse-compiler</artifactId>
 			<version>${project.version}</version>
-		</dependency> -->
+		</dependency>
 		<dependency>
 			<groupId>org.apache.maven.shared</groupId>
 			<artifactId>maven-plugin-testing-harness</artifactId>
@@ -138,6 +138,10 @@
 		<repository>
 			<id>apache.snapshots</id>
 			<url>http://repository.apache.org/snapshots/</url>
+		</repository>
+		<repository>
+			<id>codehaus.staging</id>
+			<url>http://nexus.codehaus.org/content/groups/staging/</url>
 		</repository>
 	</repositories>
 </project>
